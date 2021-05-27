@@ -36,8 +36,6 @@ print("These numbers could be telemarketers: ")
 for number in possible_telemarketers:
     print(number)
 
-# Time complexity O((n log n) + n)  I am not sure how to quantify the sorting
-# of possible telemarketers since it's a subset of the original call list
 """
 TASK 4:
 The telephone company want to identify numbers that might be doing
