@@ -20,7 +20,6 @@ for record in texts + calls:
 # Output the count of the unique numbers
 print("There are ", len(phone_numbers), " different telephone numbers in the records.")
 
-# Time complexity is O(n) as the number of operations will increase proportionately to the data size
 """
 TASK 1:
 How many different telephone numbers are there in the records? 

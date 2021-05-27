@@ -30,7 +30,7 @@ for area_code in sorted(area_codes_set):
     print(area_code)
 print(round(count/len(area_codes)*100), "percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
 
-# Time complexity O((n log n)+n)
+
 
 """
 TASK 3:

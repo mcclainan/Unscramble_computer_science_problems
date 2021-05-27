@@ -16,7 +16,7 @@ print("First record of texts,", text[0], "texts", text[1], "at time", text[2])
 call = calls[len(calls)-1]
 print("Last record of calls,", call[0], "calls", call[1], "at time", call[2], ", lasting", call[3], "seconds")
 
-# Time complexity is O(1) since the same amount of operations will occur regardless to the size of the data
+
 """
 TASK 0:
 What is the first record of texts and what is the last record of calls?

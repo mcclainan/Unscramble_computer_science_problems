@@ -24,7 +24,6 @@ for call in calls:
 print(phone_number, " spent the longest time,", longest_time, "seconds, on the phone during September 2016.")
 
 
-# Time complexity is O(n) as the number of operations will increase proportionately to the data size
 """
 TASK 2: Which telephone number spent the longest time on the phone
 during the period? Don't forget that time spent answering a call is

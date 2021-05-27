@@ -1,0 +1,32 @@
+Task 0:
+Time complexity is O(1) since the same amount of operations will occur regardless to the size of the data
+
+
+Task 1:
+Time complexity is O(n) as the number of operations will increase proportionately to the data size
+
+
+Task 2:
+Time complexity is O(n) as the number of operations will increase proportionately to the data size
+
+
+Task 3:
+The first portion of the problem getting the area codes that were called by Bangalore numbers is O(n)
+The second is de-duping the list by creating a set is O(n)
+The last part using the sorted function to print the set in order is O(n log n) according to the documentation
+plus the loop to print them O(n)
+
+So this is worst case. Considering if all phone calls made are from Bangalore and all of the numbers called were from
+different area codes.
+O(n log n + 3n) in this Task
+
+
+Task 4:
+So in this task I have to differentiate the inputs so let's sey calls have a count of n and texts have a count of m
+Theres O(2n) iterating through calls twice
+Theres O(m) iterating through texts
+Theres O(n log n) sorting the possible_telemarketers
+And O(n) to print the numbers
+
+This is the worst case where calls are telemarketers and each number is unique
+O(n log n + 3n + m)
