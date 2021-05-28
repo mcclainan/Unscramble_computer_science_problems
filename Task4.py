@@ -13,11 +13,10 @@ with open('calls.csv', 'r') as f:
     calls = list(reader)
 
 # Get all the out going callers
-possible_telemarketers = []
+possible_telemarketers = set()
 
 for call in calls:
-    if call[0].strip() not in possible_telemarketers:
-        possible_telemarketers.append(call[0].strip())
+    possible_telemarketers.add(call[0].strip())
 # print(len(possible_telemarketers))
 # Start disqualifying numbers
 for call in calls:
@@ -30,10 +29,9 @@ for text in texts:
     if text[1] in possible_telemarketers:
         possible_telemarketers.remove(text[1].strip())
 
-possible_telemarketers.sort()
 # print(len(possible_telemarketers))
 print("These numbers could be telemarketers: ")
-for number in possible_telemarketers:
+for number in sorted(possible_telemarketers):
     print(number)
 
 """

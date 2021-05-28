@@ -7,7 +7,8 @@ Time complexity is O(n) as the number of operations will increase proportionatel
 
 
 Task 2:
-Time complexity is O(n) as the number of operations will increase proportionately to the data size
+Time complexity is O(2n) as the number of operations will increase proportionately to the data size and we iterate twice
+int the case that all numbers are unique
 
 
 Task 3:

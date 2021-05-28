@@ -19,8 +19,9 @@ for call in calls:
     # print(call[0][0:5])
     if call[0][0:5] == "(080)":
         if call[1][0] == "(":
-            area_codes.append(call[1][1:4])
-            if "080" == call[1][1:4]:
+            code = call[1][1:call[1].find(")")]
+            area_codes.append(code)
+            if "080" == code:
                 count += 1
         elif call[1][0] == "7" or call[1][0] == "8" or call[1][0] == "9":
             area_codes.append(call[1][0:4])
@@ -28,7 +29,7 @@ area_codes_set = set(area_codes)
 print("The numbers called by people in Bangalore have codes:")
 for area_code in sorted(area_codes_set):
     print(area_code)
-print(round(count/len(area_codes)*100), "percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
+print(round(count/len(area_codes)*100, 2), "percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.")
 
 
 
